@@ -1,0 +1,82 @@
+.s1{
+    background-image: url("../Images/s1\ ft1.png");
+    background-size: cover; /*cover nao deixa o button sair para fora e 100% quebra ele??*/
+    background-repeat: no-repeat;
+    padding-bottom:40px;
+    
+}
+
+/*Page Header (logo,nav_bar)*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 85px;
+
+}
+.logo{
+    height: 37px;
+    cursor:pointer;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.nav__links li a{
+    font-weight: 500px;
+    font-size: 12px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+
+
+/*------------------------------------*/
+.h1__box{
+    width: 950px;
+    text-align: center;
+    margin: 20vh auto 0px;
+}
+
+h1{
+    margin: 0;
+}
+
+
+.paragraph{
+    max-width: 600px;
+    text-align: center;
+    margin: 10vh auto 0px;
+}
+
+.contact-link{
+    margin-top:10vh;
+    text-align: center;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+.link-button{
+    background: #1CD4E9;
+    border-radius: 42px;
+    display: inline-block;
+    padding: 18px 20px;
+    cursor: pointer;
+
+}
+.contact-link__text{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--white);
+}
+
+
+
+
+

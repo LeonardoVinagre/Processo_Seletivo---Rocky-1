@@ -1,0 +1,61 @@
+.s4{
+    padding: 100px 85px 50px;
+}
+
+.differential__title{
+    margin: 0 auto;
+}
+
+.s4__box{
+    display: flex;
+    height: 350px;
+    margin-top: 90px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.s4__card{  
+    position: relative;
+    overflow: hidden;
+    width: 25%;
+    background-color: #000;
+    border-radius: 32px;
+}
+
+.s4__content{
+    position: absolute;
+    padding: 45px;
+    box-sizing: border-box;
+    z-index: 1;
+
+}
+
+.s4__medal{
+    width: 50px;
+    height: 50px;
+    margin:  0 auto 35px auto;
+    background-image: url("../Images/award.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.s4__card-img{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+
+.s4-bg-1{
+    background-image: url("../Images/s4\ ft1.png");  
+    opacity: 0.4;
+    
+}
+.s4-bg-2{
+    background-image: url("../Images/s4\ ft2.png");
+    opacity: 0.4;
+}
+.s4-bg-3{
+    background-image: url("../Images/s4\ ft3.png");
+    opacity: 0.4;
+}

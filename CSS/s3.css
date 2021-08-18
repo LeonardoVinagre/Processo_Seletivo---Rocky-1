@@ -1,0 +1,64 @@
+.s3{
+    padding: 50px 85px;
+}
+
+.s3__box{
+
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.s3__card{
+    width: 28%;
+    position: relative;
+    background-color: black;
+    border-radius: 32px;
+    overflow: hidden;
+}
+.s3__content{
+    position: absolute;
+    z-index: 2; 
+    box-sizing: border-box;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.s3__card-title{
+    margin-bottom: 50px;
+ 
+}
+
+.s3__text-box{
+ 
+     
+     
+
+}
+
+.s3__text{
+    margin-bottom: 50px;
+}
+
+.s3__card-img{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.s3-bg-1{
+    background-image: url("../Images/s3\ ft1.png"); 
+}
+
+
+.s3-bg-2{
+    background-image: url("../Images/s3\ ft2.png");
+}
+
+.s3-bg-3{
+    background-image: url("../Images/s3\ ft3.png");
+    opacity: 0.6;
+}
