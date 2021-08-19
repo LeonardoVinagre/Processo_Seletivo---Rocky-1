@@ -8,50 +8,87 @@
 
 }
 
-.style-1 {
+.text-style-1 {
 font-weight: 800;
 font-size: 99px;
 line-height: 130px;
 color: var(--white);
 }
-.style-2 {
+.text-style-2 {
 font-weight: bold;
 font-size: 45px;
 line-height: 30px;
 color: var(--black);
 }
-.style-3 {
+.text-style-3 {
 font-weight: bold;
-font-size: 12px;
+font-size: 13px;
 line-height: 24px;
 color: var(--black);
 }
-.style-4 {
+.text-style-4 {
 font-weight: normal;
 font-size: 14px;
 line-height: 24px;
 color: var(--white);
 }
-.style-5 {
-font-size: 12px;
+.text-style-5 {
+font-size: 13px;
 line-height: 24px;
 color: var(--black);
 }
-.style-6{
+.text-style-6{
 font-weight: bold;
 font-size: 20px;
 line-height: 24px;
 color: var(--yellow);
 }
-.style-7{
-font-weight: bold;
-font-size: 15px;
-line-height: 20px;
+.text-style-7{
+font-weight: normal medium;
+font-size: 17px;
+line-height: 25px;
 color: var(--white);
 text-align: center;
 }
-.style-8{
+.text-style-8{
 font-weight: bold;
 font-size: 16px;
 line-height: 20px;
+}
+
+
+/*
+    Responsivity
+                    */
+
+@media only screen and (min-width: 1800px){
+    .text-style-1{
+        font-size: 141px;
+        line-height: 198px;
+    }
+    .text-style-2{
+        font-size: 60px;
+
+    }
+    .text-style-3{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .text-style-4{
+        font-size:20px;
+    }
+    .text-style-5{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .text-style-6{
+        font-size: 30px;
+    }
+    .text-style-7{
+        font-size: 25px;
+    }
+    .text-style-8{
+        font-size: 20px;
+        line-height: 30px;
+    }
 }

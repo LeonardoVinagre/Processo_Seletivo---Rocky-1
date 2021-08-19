@@ -1,8 +1,8 @@
 .s1{
     background-image: url("../Images/s1\ ft1.png");
-    background-size: cover; /*cover nao deixa o button sair para fora e 100% quebra ele??*/
+    background-size: cover; 
     background-repeat: no-repeat;
-    padding-bottom:40px;
+    padding:20px 100px 40px;
     
 }
 
@@ -10,8 +10,6 @@
 header{
     display: flex;
     justify-content: space-between;
-    padding: 20px 85px;
-
 }
 .logo{
     height: 37px;
@@ -28,7 +26,7 @@ header{
 }
 
 .nav__links li a{
-    font-weight: 500px;
+    font-weight: bold;
     font-size: 12px;
     color: #ffff;
     text-decoration: none;
@@ -38,9 +36,10 @@ header{
 
 /*------------------------------------*/
 .h1__box{
-    width: 950px;
+     
     text-align: center;
-    margin: 20vh auto 0px;
+    padding-top: 180px;
+    margin: 0 auto;
 }
 
 h1{
@@ -49,13 +48,14 @@ h1{
 
 
 .paragraph{
-    max-width: 600px;
     text-align: center;
-    margin: 10vh auto 0px;
+    margin: 0 auto;
+    padding: 70px 0 0;
+    width:600px;
 }
 
 .contact-link{
-    margin-top:10vh;
+    padding-top:60px;
     text-align: center;
     width: 100%; 
     display: flex;
@@ -78,5 +78,32 @@ h1{
 
 
 
+/*
+    Responsivity
+                    */
 
+                
+@media only screen and (min-width: 1800px){
+    .logo{
+        height: 57px;
+    }
+    .nav__links li a{
+        font-size: 20px;
+    }
+
+    .h1__box{
+        padding-top:240px;
+    }
+    .paragraph{
+        width : 850px;  
+    }
+
+    /* button */
+    .link-button{
+        padding: 30px 25px;
+    }
+    .contact-link__text{
+        font-size: 20px;
+    }
+}
 

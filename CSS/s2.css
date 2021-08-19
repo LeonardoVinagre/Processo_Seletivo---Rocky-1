@@ -1,15 +1,20 @@
-.s2{
-    display: inline-block;
-    padding: 80px 85px  ;
-}
+
 
 .s2__card{
-    padding: 20px 30px;
+    padding: 20px 50px;
     background-color: var(--white);
     box-shadow: 0px 0px 30px #0000004D;
-    width: 70%;
+    width: 75%;
     box-sizing: border-box;
 }
 
 
 
+/*
+    Responsivity
+                    */
+
+                
+@media only screen and (min-width: 1920px){
+     
+}

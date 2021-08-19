@@ -1,17 +1,11 @@
 .s4{
-    padding: 100px 85px 50px;
-}
-
-.differential__title{
-    margin: 0 auto;
+     margin-top: 150px;
 }
 
 .s4__box{
-    display: flex;
-    height: 350px;
-    margin-top: 90px;
+    display: flex;  
     justify-content: space-between;
-    box-sizing: border-box;
+    flex-direction: row;
 }
 
 .s4__card{  
@@ -20,14 +14,19 @@
     width: 25%;
     background-color: #000;
     border-radius: 32px;
+     border: none;
 }
 
-.s4__content{
-    position: absolute;
-    padding: 45px;
-    box-sizing: border-box;
-    z-index: 1;
-
+.s4__card-content{
+    position: relative;
+    padding: 60px 50px;
+    z-index: 2;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--white);
+    text-align: center;
+    font-weight: bold;
+    
 }
 
 .s4__medal{
@@ -42,6 +41,7 @@
 .s4__card-img{
     position: absolute;
     top:0;
+    left:0;
     width: 100%;
     height: 100%;
 }
@@ -58,4 +58,28 @@
 .s4-bg-3{
     background-image: url("../Images/s4\ ft3.png");
     opacity: 0.4;
+}
+
+
+/*
+    Responsivity
+                    */
+
+
+@media only screen and (min-width: 1800px){
+    .s4{
+        margin-top: 200px;
+    }
+    .s4__card-content{
+        font-size: 20px;
+        padding: 100px 90px;
+        line-height: 30px;
+    }
+    .s4__text-box{
+        padding-top: 20px;
+    }
+    .s4__medal{
+        width: 137px;
+        height: 137px;
+    }
 }

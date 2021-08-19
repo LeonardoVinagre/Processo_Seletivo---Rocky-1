@@ -8,6 +8,7 @@ body{
     background-image: url("../Images/bg.png");
     background-size: cover;
     background-repeat: no-repeat;  
+    padding: 80px 100px;
 }
 
 .bg{
@@ -15,6 +16,7 @@ body{
     background-repeat: no-repeat;
 }
 
+
 .section-title{
-    margin-bottom: 80px;
+    padding: 0 0 100px 0;
 }
