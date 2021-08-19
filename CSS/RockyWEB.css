@@ -8,41 +8,48 @@
 
 }
 
+/*S1 H2*/
 .text-style-1 {
-font-weight: 800;
-font-size: 99px;
-line-height: 130px;
-color: var(--white);
+    font-weight: 800;
+    font-size: 99px;
+    line-height: 130px;
+    color: var(--white);
 }
-.text-style-2 {
-font-weight: bold;
-font-size: 45px;
-line-height: 30px;
-color: var(--black);
-}
-.text-style-3 {
-font-weight: bold;
-font-size: 13px;
-line-height: 24px;
-color: var(--black);
-}
+/*S1 PARAGRAPH*/
 .text-style-4 {
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
-color: var(--white);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--white);
 }
-.text-style-5 {
-font-size: 13px;
-line-height: 24px;
-color: var(--black);
+/*SECTIONS TITLE'S*/
+.text-style-2 {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 30px;
+    color: var(--black);
 }
+/*SECTIONS H3*/
 .text-style-6{
 font-weight: bold;
 font-size: 20px;
 line-height: 24px;
 color: var(--yellow);
 }
+/*S2 EDGE TEXTS*/
+.text-style-5 {
+font-size: 13px;
+line-height: 24px;
+color: var(--black);
+}
+/*S2 MIDDLE TEXT*/
+.text-style-3 {
+font-weight: bold;
+font-size: 13px;
+line-height: 24px;
+color: var(--black);
+}
+/*S3 PARAGRAPH STYLE*/
 .text-style-7{
 font-weight: normal medium;
 font-size: 17px;
@@ -50,6 +57,7 @@ line-height: 25px;
 color: var(--white);
 text-align: center;
 }
+/*FOOTER TEXT STYLE*/
 .text-style-8{
 font-weight: bold;
 font-size: 16px;
@@ -61,9 +69,10 @@ line-height: 20px;
     Responsivity
                     */
 
-@media only screen and (min-width: 1800px){
+/* above 1920px width*/
+@media only screen and (min-width: 1920px){
     .text-style-1{
-        font-size: 141px;
+        font-size: 145px;
         line-height: 198px;
     }
     .text-style-2{
@@ -75,7 +84,7 @@ line-height: 20px;
         line-height: 30px;
     }
     .text-style-4{
-        font-size:20px;
+        font-size:22px;
     }
     .text-style-5{
         font-size: 25px;
@@ -83,12 +92,95 @@ line-height: 20px;
     }
     .text-style-6{
         font-size: 30px;
-    }
+        line-height: 24px;
+        }
     .text-style-7{
         font-size: 25px;
+        line-height: 30px;
     }
-    .text-style-8{
+
+}
+
+/*between 1800px and 1920px width */
+@media only screen and (min-width: 1800px) and (max-width: 1920px){
+    .text-style-1{
+        font-size: 141px;
+        line-height: 198px;
+    }
+    .text-style-2{
+        font-size: 55px;
+
+    }
+    .text-style-3{
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .text-style-4{
+        font-size:20px;
+    }
+    .text-style-5{
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .text-style-6{
+        font-size: 28px;
+        line-height: 24px;
+        }
+    .text-style-7{
+
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+}
+
+/*between 1600px-min and 1800px-max width*/
+@media only screen and (max-width: 1800px) and (min-width: 1600px){
+    .text-style-1{
+        font-size: 130px;
+        line-height: 198px;
+    }
+    .text-style-2{
+        font-size: 50px;
+
+    }
+    .text-style-3{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .text-style-4{
+        font-size:18px;
+    }
+    .text-style-5{
+        font-size: 20px;
+        line-height: 25x;
+    }
+    .text-style-6{
+        font-size: 26px;
+        line-height: 24px;
+        }
+    .text-style-7{
         font-size: 20px;
         line-height: 30px;
+    }
+    
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1400px){
+    .text-style-1{
+        font-size: 110px;
+        line-height: 160px;
+    }
+
+    .text-style-3{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .text-style-4{
+        font-size:17px;
+    }
+    .text-style-5{
+        font-size: 16px;
+        line-height: 24px;
     }
 }

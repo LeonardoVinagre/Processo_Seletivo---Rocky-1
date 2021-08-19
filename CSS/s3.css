@@ -56,7 +56,9 @@
     Responsivity
                     */
 
-@media only screen and (min-width: 1800px){
+/*above 1920px width */
+
+@media only screen and (min-width: 1920px){
     .s3{
         margin-top:200px;
     }
@@ -64,6 +66,32 @@
         padding: 45px 0px;
     }
      .s3__text-box{
-        padding: 45px 80px;
+        padding: 30px 60px 45px;
+    }
+}
+
+/*between 1800px-min and 1920px-max width*/
+@media only screen and (max-width: 1920px) and (min-width: 1800px){
+    .s3{
+        margin-top:200px;
+    }
+    .s3__card-content{
+        padding: 45px 0px;
+    }
+    .s3__text-box{
+        padding: 20px 60px 45px;
+    }
+}
+
+/*between 1600px-min and 1800px-max width*/
+@media only screen and (max-width: 1800px) and (min-width: 1600px){
+    .s3{
+        margin-top:200px;
+    }
+    .s3__card-content{
+        padding: 35px 0px;
+    }
+    .s3__text-box{
+        padding: 10px 60px 20px;
     }
 }
