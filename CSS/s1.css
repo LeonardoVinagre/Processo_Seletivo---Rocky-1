@@ -2,32 +2,47 @@
     background-image: url("../Images/s1\ ft1.png");
     background-size: cover; 
     background-repeat: no-repeat;
+    background-position: 50%  0;
     padding:20px 100px 40px;
     
 }
 
 /*Page Header (logo,nav_bar)*/
 header{
+    z-index: 20;
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
+    padding:20px 100px 40px;
     justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+}
+header.sticky{
+    background-color: black;
 }
 .logo{
     height: 37px; 
     cursor:pointer;
+    transition: 0.6s;
 }
 
-.nav__links {
+.menu__links {
     list-style: none;
 }
 
-.nav__links li {
+.menu__links li {
     display: inline-block;
     padding: 0px 15px;
+    transition: all 0.3s;
 }
 
-.nav__links li a{
+.menu__links li a{
     font-weight: bold;
-    font-size: 12px;
+    font-size: 13px;
     color: #ffff;
     text-decoration: none;
 }
@@ -36,18 +51,13 @@ header{
 
 /*------------------------------------*/
 .h2__box{
-     
+    width: auto;
     text-align: center;
     padding-top: 180px;
     margin: 0 auto;
 }
 
-h1{
-    margin:0;
-}
-h2{
-    margin: 0;
-}
+
 
 
 .paragraph{
@@ -70,16 +80,32 @@ h2{
     display: inline-block;
     padding: 18px 20px;
     cursor: pointer;
-
+    text-decoration: none;
+    transition: all 0.3s;
 }
 .contact-link__text{
     font-weight: bold;
     font-size: 14px;
- 
+    text-decoration: none;
     color: var(--white);
 }
 
+/*---------------------------------------------------------
+    disabling some css of mobile menu for desktop version*/
 
+header label{
+    display: none;
+}
+.servicesItens,
+.differentialsItens{
+    display: none;
+}
+.services a img,
+.differentials a img{
+    display: none;
+}
+
+/*--------------------------------------------------------*/
 
 /*
     Responsivity
@@ -91,7 +117,7 @@ h2{
     .logo{
         height: 60px;
     }
-    .nav__links li a{
+    .menu__links li a{
         font-size: 21px;
     }
     
@@ -119,7 +145,7 @@ h2{
     .logo{
         height: 57px;
     }
-    .nav__links li a{
+    .menu__links li a{
         font-size: 20px;
     }
 
@@ -147,7 +173,7 @@ h2{
     .logo{
         height: 50px;
     }
-    .nav__links li a{
+    .menu__links li a{
         font-size: 17px;
     }
     .h2__box{
@@ -173,7 +199,7 @@ h2{
     .logo{
         height: 45px;
     }
-    .nav__links li a{
+    .menu__links li a{
         font-size: 15px;
     }
     .h2__box{
@@ -191,5 +217,86 @@ h2{
     }
     .contact-link__text{
         font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1250px) and (min-width:1024px){
+    
+    .menu__links li {
+        padding: 0px 10px;
+    }
+    .menu__links li a{
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width:1024px){
+    .s1{
+        padding: 20px 0 40px 0;
+    }
+    header{
+       justify-content: initial;
+   }
+   h1{
+       margin: 0 auto;
+   }
+   header label{
+        display: initial;
+    }
+    .servicesItens,
+    .differentialsItens{
+     display: initial;
+    }
+    .services a img,
+    .differentials a img{
+        display: initial;
+    }
+    .paragraph{
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .paragraph{
+        width: 350px;
+    }
+    .h2__box{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 580px) and (max-width: 768px){
+    .h2__box{
+        width: 80%;
+    }
+    .paragraph{
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 580px){
+    .h2__box{
+        width: 80%;
+    }
+    .paragraph{
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .h2__box{
+        width: 80%;
+    }
+    .logo{
+        height: 30px;
+    }
+    .link-button{
+        padding: 20px 40px;
+    }
+    .contact-link__text{
+        font-size: 12px;
+    }
+    .paragraph{
+        width: 80%;
     }
 }

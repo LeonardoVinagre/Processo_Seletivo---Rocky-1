@@ -1,5 +1,5 @@
 .s4{
-     margin-top: 150px;
+     margin-top: 200px;
 }
 
 .s4__box{
@@ -13,13 +13,13 @@
     overflow: hidden;
     width: 25%;
     background-color: #000;
-    border-radius: 32px;
-     border: none;
+    border-radius: 51px;
+    box-shadow: 0px 5px 15px #00000029;
 }
 
 .s4__card-content{
     position: relative;
-    padding: 60px 50px;
+    padding: 70px 50px;
     z-index: 2;
     font-size: 15px;
     line-height: 25px;
@@ -32,12 +32,13 @@
 
 .differential-medal{
     margin:  0 auto 35px auto;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 }
 
 .s4__card-img{
     position: absolute;
+    z-index: 1;
     top:0;
     left:0;
     width: 100%;
@@ -62,12 +63,10 @@
 /*
     Responsivity
                     */
-/*above 1800px width */
+/*above 1920px width */
 
-@media only screen and (min-width: 1800px){
-    .s4{
-        margin-top: 200px;
-    }
+@media only screen and (min-width: 1920px){
+
     .s4__card-content{
         font-size: 20px;
         padding: 100px 90px;
@@ -76,13 +75,119 @@
     .s4__text-box{
         padding-top: 20px;
     }
-    .s4__medal{
+    .differential-medal{
         width: 137px;
         height: 137px;
     }
 }
 
+/*between 1800px-min and 1920px-max width*/
+@media only screen and (max-width: 1920px) and (min-width: 1800px){
+
+    .s4__card-content{
+        font-size: 18px;
+        padding: 100px 90px;
+        line-height: 25px;
+    }
+    .s4__text-box{
+        padding-top: 20px;
+    }
+    .differential-medal{
+        width: 120px;
+        height: 120px;
+    }
+}
+
 /*between 1600px-min and 1800px-max width*/
 @media only screen and (max-width: 1800px) and (min-width: 1600px){
-    
+
+    .s4__card-content{
+        font-size: 17px;
+        padding: 100px 60px;
+        line-height: 25px;
+    }
+    .s4__text-box{
+        padding-top: 20px;
+    }
+    .differential-medal{
+        width: 110px;
+        height: 110px;
+    }
 }
+
+/*between 1400px-min and 1600px-max width*/
+@media only screen and (max-width: 1600px) and (min-width: 1400px){
+
+    .s4__card-content{
+        font-size: 16px;
+        padding: 80px 40px;
+        line-height: 25px;
+    }
+    .s4__text-box{
+        padding-top: 20px;
+    }
+    .differential-medal{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/*between 1024px-min and 1250px-max width*/
+@media only screen and (max-width: 1250px) and (min-width: 1024px){
+
+    .s4__card-content{
+        font-size: 14px;
+        padding: 60px 40px;
+        line-height: 20px;
+    }
+    .s4__text-box{
+        padding-top: 0px;
+    }
+    .differential-medal{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+/*MOBILE*/
+@media only screen and (max-width: 1024px){
+    .s4{
+        margin-top: 100px;
+    }
+    
+    .s4__box{
+        flex-direction: column;
+    }
+   
+    .s4__card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+/*i've set up all s2,s3,s4 to the center of screen to avoid giant card's */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .s4__box{
+        align-items: center;
+    }
+    .s4__card{
+        max-width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+   
+    .differential-medal {
+        margin: 0 auto 15px auto;
+        width: 60px;
+        height:  60px;
+    }
+
+    .s4__card-content {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+}
+ 

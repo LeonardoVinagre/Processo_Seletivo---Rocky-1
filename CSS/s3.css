@@ -9,23 +9,27 @@
 }
 
 .s3__card{
+    z-index: 2;
     width: 30%;
     position: relative;
     background-color: black;
     border-radius: 32px;
     overflow: hidden;
     text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 15px #0000001A;
 }
 
 .s3__card-content{
     position:relative;
     z-index: 2; 
-    padding: 35px 0px;
+    padding: 35px 10px;
 
 }
 
 .s3__text-box{
     padding: 20px 30px;
+ 
 }
 
 .s3__card-img{
@@ -93,5 +97,43 @@
     }
     .s3__text-box{
         padding: 10px 60px 20px;
+    }
+}
+
+/*between 1024px-min and 1250px-max width*/
+@media only screen and (max-width: 1250px) and (min-width: 1024px){
+    .s3{
+        margin-top:200px;
+    }
+    .s3__card-content{
+        padding: 35px 0px;
+    }
+    .s3__text-box{
+        padding: 10px 40px ;
+    }
+
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 1024px){
+    .s3{
+        margin-top: 100px;
+    }
+    .s3__box{
+        flex-direction: column;
+    }
+    .s3__card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+/*i've set up all s2,s3,s4 to the center of screen to avoid giant card's */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .s3__box{
+        align-items: center;
+    }
+    .s3__card{
+        max-width: 50%;
+        margin-bottom: 30px;
     }
 }
