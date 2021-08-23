@@ -36,6 +36,7 @@
     height: 80px;
 }
 
+/*background layer for opacity effect*/
 .s4__card-img{
     position: absolute;
     z-index: 1;
@@ -45,6 +46,7 @@
     height: 100%;
 }
 
+/*s4 card's background*/
 .s4-bg-1{
     background-image: url("../Images/s4\ ft1.png");  
     opacity: 0.4;
@@ -151,6 +153,7 @@
 
 
 /*MOBILE*/
+/*below 1024px width*/
 @media only screen and (max-width: 1024px){
     .s4{
         margin-top: 100px;
@@ -166,6 +169,7 @@
     }
 }
 /*i've set up all s2,s3,s4 to the center of screen to avoid giant card's */
+/*between 768px-min and 1024px-max width*/
 @media only screen and (min-width: 768px) and (max-width: 1024px){
     .s4__box{
         align-items: center;
@@ -176,6 +180,7 @@
     }
 }
 
+/*below 450px width*/
 @media only screen and (max-width: 450px){
    
     .differential-medal {

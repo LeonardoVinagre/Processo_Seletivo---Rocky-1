@@ -3,84 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--(meta description) this 'll make content appear under the title on searchs'-->
-    <meta name="description" content="Marketing Digital para Empresas que querem Resultados.">
+    <!--(meta description) this 'll make content appear under the title on search's-->
+    <!--Example for this site-->
+    <meta name="description" content="Site created for Rocky's internship process, using HTML, CSS and JavaScript.">
     <!--(canonical) you can set this in duplicated pages, in href you put the page url you wanna rank as principal one-->
-    <link rel="canonical" href="#"><!--i dont set any one becouse its not hosted-->
+    <link rel="canonical" href="#"><!--i dont set any one because its not hosted-->
+    <!--(robots) this (index,follow) means to guide search engines to index this page and follow all its links-->
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Leonardo Rossi Vinagre">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rocky - Marketing Digital com Performance</title>
+    <title>Rocky - Internship Process</title>
     <link rel="stylesheet" href="CSS/Font.css" />
-    <link rel="stylesheet" href="CSS/RockyWEB.css" />
+    <link rel="stylesheet" href="CSS/fontStyles.css" />
     <link rel="stylesheet" href="CSS/Global.css" />
-    <link rel="stylesheet" href="./CSS/menu-Mobile.css" />
+    <link rel="stylesheet" href="./CSS/menuMobile.css" />
     <link rel="stylesheet" href="CSS/s1.css" />
     <link rel="stylesheet" href="CSS/s2.css" />
     <link rel="stylesheet" href="CSS/s3.css" />
     <link rel="stylesheet" href="CSS/s4.css" />
     <link rel="stylesheet" href="CSS/Footer.css" />
-    <link rel="stylesheet" href="CSS/Zoom-Effect.css" />
+    <link rel="stylesheet" href="CSS/zoomEffect.css" />
     <script src="./JS/toggleMenu.js" defer></script>
     <script src="./JS/stickyHeader.js" defer></script>
 </head>
 <body>
-   
-        <section class="s1">
-            <header class="header">
-                <h1>
-                    <img class="logo" src="Images/logo.png" alt="Rocky" title="Rocky">
-                </h1>
-                    <input id="menu-hamburguer" type="checkbox" />
-                
-                    <label for="menu-hamburguer">
-                        <div class="menuOpen">
-                            <span class="hamburguer"></span>
-                        </div>
-                    </label>
+    <section class="s1">
+        <header class="header">
+            <h1>
+                <img class="logo" src="Images/logo.png" alt="Rocky" title="Rocky">
+            </h1>
+                <input id="menu-hamburguer" type="checkbox" />
             
-                    <nav class="menu">
-                        <ul class="menu__links">
-                            <li class="border"><a href="#">HOME</a></li>
-                            <li class="border"><a href="#s2-link">SOBRE A ROCKY</a></li>
-                            <li class="border services"><a href="#s3-link">SERVIÇOS<img class="drop_Arrow" src="./Images/arrow_down.svg" alt="arrow down" title="arrow down"></a>
-                                <ul class="servicesItens">
-                                    <li><a href="#s3-link">LOREM IPSUM</a></li>
-                                    <li><a href="#s3-link">LOREM IPSUM</a></li>
-                                    <li><a href="#s3-link">LOREM IPSUM</a></li>
-                                    <li><a href="#s3-link">LOREM IPSUM</a></li>
-                                    <li><a href="#s3-link">LOREM IPSUM</a></li>
-                                </ul>
-                            </li>
-                            <li class="border differentials"><a href="#s4-link">DIFERENCIAS<img class="drop_Arrow" src="./Images/arrow_down.svg" alt="arrow down" title="arrow down"></a>
-                                <ul class="differentialsItens">
-                                    <li><a href="#s4-link">LOREM IPSUM</a></li>
-                                    <li><a href="#s4-link">LOREM IPSUM</a></li>
-                                    <li><a href="#s4-link">LOREM IPSUM</a></li>
-                                    <li><a href="#s4-link">LOREM IPSUM</a></li>
-                                    <li><a href="#s4-link">LOREM IPSUM</a></li>
-                                </ul>
-                            </li>
-                            <li class="border"><a href="#footer-link">TRABALHE CONOSCO</a></li>
-                            <li class="border"><a href="#footer-link">CONTATO</a></li>
-                            <li><a href="#">BLOG</a></li>
+            <label for="menu-hamburguer">
+                <div class="menuOpen">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+        
+            <nav class="menu">
+                <ul class="menu__links">
+                    <li class="border"><a href="#">HOME</a></li>
+                    <li class="border"><a href="#s2-link">SOBRE A ROCKY</a></li>
+                    <li class="border services"><a>SERVIÇOS<img class="drop_Arrow" src="./Images/arrow_down.svg" alt="arrow down" title="arrow down"></a>
+                        <ul class="servicesItens">
+                            <li><a href="#s3-link">LOREM IPSUM</a></li>
+                            <li><a href="#s3-link">LOREM IPSUM</a></li>
+                            <li><a href="#s3-link">LOREM IPSUM</a></li>
+                            <li><a href="#s3-link">LOREM IPSUM</a></li>
+                            <li><a href="#s3-link">LOREM IPSUM</a></li>
                         </ul>
-                        <div class="blur"></div>
-                    </nav>
-                
-            </header>
-            <div class="h2__box">
-                <h2 class="text-style-1">FULL DIGITAL PERFORMANCE</h1>
-            </div>
-            <div class="paragraph">
-                <p class="text-style-4">
-                    Lorem ipsum dolor sit amet, consetetur 
-                    <span style="color: yellow; font-weight: bold;">sadipscing elitr, sed diam nonumy eirmod</span>
-                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-                </p>
-            </div>
-            <div class="contact-link">
-                <a class="link-button" href="#footer-link"><span class="contact-link__text">ENTRE EM CONTATO AGORA</span></a>
-            </div>
-        </section>
+                    </li>
+                    <li class="border differentials"><a>DIFERENCIAS<img class="drop_Arrow" src="./Images/arrow_down.svg" alt="arrow down" title="arrow down"></a>
+                        <ul class="differentialsItens">
+                            <li><a href="#s4-link">LOREM IPSUM</a></li>
+                            <li><a href="#s4-link">LOREM IPSUM</a></li>
+                            <li><a href="#s4-link">LOREM IPSUM</a></li>
+                            <li><a href="#s4-link">LOREM IPSUM</a></li>
+                            <li><a href="#s4-link">LOREM IPSUM</a></li>
+                        </ul>
+                    </li>
+                    <li class="border"><a href="#footer-link">TRABALHE CONOSCO</a></li>
+                    <li class="border"><a href="#footer-link">CONTATO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                </ul>
+                <div class="blur"></div>
+            </nav>
+        </header>
+        <div class="h2__box">
+            <h2 class="text-style-1">FULL DIGITAL PERFORMANCE</h1>
+        </div>
+        <div class="paragraph">
+            <p class="text-style-4">
+                Lorem ipsum dolor sit amet, consetetur 
+                <span style="color: yellow; font-weight: bold;">sadipscing elitr, sed diam nonumy eirmod</span>
+                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+            </p>
+        </div>
+        <div class="contact-link">
+            <a class="link-button" href="#footer-link"><span class="contact-link__text">ENTRE EM CONTATO AGORA</span></a>
+        </div>
+    </section>
     <div class="content">
         <section class="s2" id="s2-link">
                 <div class="section-title">

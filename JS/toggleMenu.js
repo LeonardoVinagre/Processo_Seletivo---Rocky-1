@@ -8,6 +8,7 @@ function toggleMenu(){
     //if yes, than we remove from it
     if(menu.classList.contains("showMenu")){
         menu.classList.remove("showMenu");
+
     }
     //if not, we add to it
     else{

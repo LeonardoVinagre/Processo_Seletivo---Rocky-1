@@ -32,6 +32,7 @@
  
 }
 
+/*backgrund layer for opacity effect*/
 .s3__card-img{
     position: absolute;
     left: 0;
@@ -40,10 +41,10 @@
     height: 100%;
 }
 
+/*s3 cards background*/
 .s3-bg-1{
     background-image: url("../Images/s3\ ft1.png"); 
 }
-
 
 .s3-bg-2{
     background-image: url("../Images/s3\ ft2.png");
@@ -115,6 +116,7 @@
 }
 
 /*MOBILE*/
+/*below 1024px width*/
 @media only screen and (max-width: 1024px){
     .s3{
         margin-top: 100px;
@@ -128,6 +130,7 @@
     }
 }
 /*i've set up all s2,s3,s4 to the center of screen to avoid giant card's */
+/*between 768px-min and 1024px-max width*/
 @media only screen and (min-width: 768px) and (max-width: 1024px){
     .s3__box{
         align-items: center;
