@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,12 +23,11 @@
     <link rel="stylesheet" href="CSS/s4.css" />
     <link rel="stylesheet" href="CSS/Footer.css" />
     <link rel="stylesheet" href="CSS/zoomEffect.css" />
-    <script src="./JS/toggleMenu.js" defer></script>
-    <script src="./JS/stickyHeader.js" defer></script>
 </head>
 <body>
+    <!--section one (header)-->
     <section class="s1">
-        <header class="header">
+        <header class="header"> 
             <h1>
                 <img class="logo" src="Images/logo.png" alt="Rocky" title="Rocky">
             </h1>
@@ -44,7 +43,7 @@
                 <ul class="menu__links">
                     <li class="border"><a href="#">HOME</a></li>
                     <li class="border"><a href="#s2-link">SOBRE A ROCKY</a></li>
-                    <li class="border services"><a>SERVIÇOS<img class="drop_Arrow" src="./Images/arrow_down.svg" alt="arrow down" title="arrow down"></a>
+                    <li class="border services"><a href="#s3-link">SERVIÇOS<img class="drop_Arrow" src="./Images/arrow_down.svg" alt="arrow down" title="arrow down"></a>
                         <ul class="servicesItens">
                             <li><a href="#s3-link">LOREM IPSUM</a></li>
                             <li><a href="#s3-link">LOREM IPSUM</a></li>
@@ -53,7 +52,7 @@
                             <li><a href="#s3-link">LOREM IPSUM</a></li>
                         </ul>
                     </li>
-                    <li class="border differentials"><a>DIFERENCIAS<img class="drop_Arrow" src="./Images/arrow_down.svg" alt="arrow down" title="arrow down"></a>
+                    <li class="border differentials"><a href="#s4-link">DIFERENCIAS<img class="drop_Arrow" src="./Images/arrow_down.svg" alt="arrow down" title="arrow down"></a>
                         <ul class="differentialsItens">
                             <li><a href="#s4-link">LOREM IPSUM</a></li>
                             <li><a href="#s4-link">LOREM IPSUM</a></li>
@@ -84,6 +83,7 @@
         </div>
     </section>
     <div class="content">
+        <!--section two (about)-->
         <section class="s2" id="s2-link">
                 <div class="section-title">
                     <h2 class="text-style-2">SOBRE</h2>
@@ -108,7 +108,7 @@
                     </div>
                 </div>
             </section>
-        
+        <!--section three (services)-->
         <section class="s3" id="s3-link">
            
                 <div class="section-title">
@@ -154,6 +154,7 @@
                 </div>
 
             </section>
+        <!--section four (differentials)-->
         <section class="s4" id="s4-link">
             <div class="section-title">
                 <h2 class="text-style-2">DIFERENCIAIS</h2>
@@ -162,6 +163,7 @@
                 <div class="s4__card">
                     <div class="s4__card-content">
                         <h3 >
+                            <!--I was instructed to use any photo in the area, as I didn't have the mockup example-->
                             <img class="differential-medal" src="./Images/award.svg">
                         </h3>
                         <div class="s4__text-box">
@@ -198,7 +200,7 @@
         </section>   
     </div>
     
-
+    <!--last part (footer)-->
     <footer id="footer-link">
         <div class="yellow-rectangle"></div>
         <div class="footer__main">
@@ -263,5 +265,8 @@
         <div class="yellow-rectangle"></div>
     </footer>
 
+    <!--JS SCRIPTS----------------------------------->
+    <script src="./JS/toggleMenu.js" defer></script>
+    <script src="./JS/stickyHeader.js" defer></script>
 </body>
 </html>

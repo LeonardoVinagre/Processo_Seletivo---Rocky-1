@@ -1,61 +1,57 @@
-.s3{
-    margin-top: 150px;
+.s3 {
+  margin-top: 150px;
 }
 
-.s3__box{
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
+.s3__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.s3__card{
-    z-index: 2;
-    width: 30%;
-    position: relative;
-    background-color: black;
-    border-radius: 32px;
-    overflow: hidden;
-    text-align: center;
-    box-sizing: border-box;
-    box-shadow: 0px 3px 15px #0000001A;
+.s3__card {
+  z-index: 2;
+  width: 30%;
+  position: relative;
+  background-color: black;
+  border-radius: 32px;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 15px #0000001a;
 }
 
-.s3__card-content{
-    position:relative;
-    z-index: 2; 
-    padding: 35px 10px;
-
+.s3__card-content {
+  position: relative;
+  z-index: 2;
+  padding: 35px 10px;
 }
 
-.s3__text-box{
-    padding: 20px 30px;
- 
+.s3__text-box {
+  padding: 20px 30px;
 }
 
 /*backgrund layer for opacity effect*/
-.s3__card-img{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+.s3__card-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*s3 cards background*/
-.s3-bg-1{
-    background-image: url("../Images/s3\ ft1.png"); 
+.s3-bg-1 {
+  background-image: url("../Images/s3\ ft1.png");
 }
 
-.s3-bg-2{
-    background-image: url("../Images/s3\ ft2.png");
+.s3-bg-2 {
+  background-image: url("../Images/s3\ ft2.png");
 }
 
-.s3-bg-3{
-    background-image: url("../Images/s3\ ft3.png");
-    opacity: 0.4;
+.s3-bg-3 {
+  background-image: url("../Images/s3\ ft3.png");
+  opacity: 0.4;
 }
-
-
 
 /*
     Responsivity
@@ -63,80 +59,79 @@
 
 /*above 1920px width */
 
-@media only screen and (min-width: 1920px){
-    .s3{
-        margin-top:200px;
-    }
-    .s3__card-content{
-        padding: 45px 0px;
-    }
-     .s3__text-box{
-        padding: 30px 60px 45px;
-    }
+@media only screen and (min-width: 1920px) {
+  .s3 {
+    margin-top: 200px;
+  }
+  .s3__card-content {
+    padding: 45px 0px;
+  }
+  .s3__text-box {
+    padding: 30px 60px 45px;
+  }
 }
 
 /*between 1800px-min and 1920px-max width*/
-@media only screen and (max-width: 1920px) and (min-width: 1800px){
-    .s3{
-        margin-top:200px;
-    }
-    .s3__card-content{
-        padding: 45px 0px;
-    }
-    .s3__text-box{
-        padding: 20px 60px 45px;
-    }
+@media only screen and (max-width: 1920px) and (min-width: 1800px) {
+  .s3 {
+    margin-top: 200px;
+  }
+  .s3__card-content {
+    padding: 45px 0px;
+  }
+  .s3__text-box {
+    padding: 20px 60px 45px;
+  }
 }
 
 /*between 1600px-min and 1800px-max width*/
-@media only screen and (max-width: 1800px) and (min-width: 1600px){
-    .s3{
-        margin-top:200px;
-    }
-    .s3__card-content{
-        padding: 35px 0px;
-    }
-    .s3__text-box{
-        padding: 10px 60px 20px;
-    }
+@media only screen and (max-width: 1800px) and (min-width: 1600px) {
+  .s3 {
+    margin-top: 200px;
+  }
+  .s3__card-content {
+    padding: 35px 0px;
+  }
+  .s3__text-box {
+    padding: 10px 60px 20px;
+  }
 }
 
 /*between 1024px-min and 1250px-max width*/
-@media only screen and (max-width: 1250px) and (min-width: 1024px){
-    .s3{
-        margin-top:200px;
-    }
-    .s3__card-content{
-        padding: 35px 0px;
-    }
-    .s3__text-box{
-        padding: 10px 40px ;
-    }
-
+@media only screen and (max-width: 1250px) and (min-width: 1024px) {
+  .s3 {
+    margin-top: 200px;
+  }
+  .s3__card-content {
+    padding: 35px 0px;
+  }
+  .s3__text-box {
+    padding: 10px 40px;
+  }
 }
 
 /*MOBILE*/
 /*below 1024px width*/
-@media only screen and (max-width: 1024px){
-    .s3{
-        margin-top: 100px;
-    }
-    .s3__box{
-        flex-direction: column;
-    }
-    .s3__card{
-        width: 100%;
-        margin-bottom: 30px;
-    }
+@media only screen and (max-width: 1024px) {
+  .s3 {
+    margin-top: 100px;
+  }
+  .s3__box {
+    flex-direction: column;
+  }
+  .s3__card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 /*i've set up all s2,s3,s4 to the center of screen to avoid giant card's */
 /*between 768px-min and 1024px-max width*/
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    .s3__box{
-        align-items: center;
-    }
-    .s3__card{
-        max-width: 50%;
-        margin-bottom: 30px;
-    }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .s3__box {
+    align-items: center;
+  }
+  .s3__card {
+    max-width: 50%;
+    margin-bottom: 30px;
+  }
 }

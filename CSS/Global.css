@@ -1,49 +1,46 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.content{
-    background-image: url("../Images/bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;  
-    padding: 80px 100px;
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.bg{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center ; /*verificar dps*/  
+.content {
+  background-image: url("../Images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 100px;
+}
+
+.bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /*verificar dps*/
 }
 
 h1,
 h2,
-h3{
-    margin:0;
+h3 {
+  margin: 0;
 }
 
-
-.section-title{
-    padding: 0 0 100px 0;
+.section-title {
+  padding: 0 0 100px 0;
 }
-
 
 /*      Mobile
     below 1024px width  */
-@media only screen and (max-width: 1024px){
-    .content{
-        background-image: none;
-        padding: 100px 30px;
-    }
+@media only screen and (max-width: 1024px) {
+  .content {
+    background-image: none;
+    padding: 100px 30px;
+  }
 }
 /*between 768px-min and 1024px-max width*/
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    .section-title{
-        text-align: center;
-    }
-     
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .section-title {
+    text-align: center;
+  }
 }

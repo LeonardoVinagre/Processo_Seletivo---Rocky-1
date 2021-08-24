@@ -4,17 +4,15 @@ var menuIcon = document.querySelector(".menuOpen");
 //add a event click in the site's menu icon to active the toggleMenu Function
 menuIcon.addEventListener("click", toggleMenu);
 //this function  check if .menu already have a class named showMenu!
-function toggleMenu(){
-    //if yes, than we remove from it
-    if(menu.classList.contains("showMenu")){
-        menu.classList.remove("showMenu");
-
-    }
-    //if not, we add to it
-    else{
-        menu.classList.add('showMenu');
-    }
-    
+function toggleMenu() {
+  //if yes, than we remove from it
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+  }
+  //if not, we add to it
+  else {
+    menu.classList.add("showMenu");
+  }
 }
 //-----------------------------------------------
 //js of dropdown menu inside the side menu
@@ -28,34 +26,29 @@ var differentialsItens = document.querySelector(".differentialsItens");
 services.addEventListener("click", dropdownServices);
 differentials.addEventListener("click", dropdownDifferentials);
 
-
-function dropdownServices(){
-    //check if services have 'showDropdown' class
-    //if yes, than we remove it
-    if(servicesItens.classList.contains("showDropdown")){
-        servicesItens.classList.remove("showDropdown");
+function dropdownServices() {
+  //check if services have 'showDropdown' class
+  //if yes, than we remove it
+  if (servicesItens.classList.contains("showDropdown")) {
+    servicesItens.classList.remove("showDropdown");
+  } else {
+    //if not, we first check if differentials dropmenu is opened
+    //if its opened we remove 'showDropdown' from it
+    if (differentialsItens.classList.contains("showDropdown")) {
+      differentialsItens.classList.remove("showDropdown");
     }
-    else{
-        //if not, we first check if differentials dropmenu is opened
-        //if its opened we remove 'showDropdown' from it
-        if(differentialsItens.classList.contains("showDropdown")){
-            differentialsItens.classList.remove("showDropdown");
-        }
-        //than we add  'showDropdown' class to services
-        servicesItens.classList.add("showDropdown");
-    }  
+    //than we add  'showDropdown' class to services
+    servicesItens.classList.add("showDropdown");
+  }
 }
 //same as dropdownServices!
-function dropdownDifferentials(){
-    if(differentialsItens.classList.contains("showDropdown")){
-        differentialsItens.classList.remove("showDropdown");
+function dropdownDifferentials() {
+  if (differentialsItens.classList.contains("showDropdown")) {
+    differentialsItens.classList.remove("showDropdown");
+  } else {
+    if (servicesItens.classList.contains("showDropdown")) {
+      servicesItens.classList.remove("showDropdown");
     }
-    else{
-        if(servicesItens.classList.contains("showDropdown")){
-            servicesItens.classList.remove("showDropdown");
-        }
-        differentialsItens.classList.add("showDropdown");
-    }  
+    differentialsItens.classList.add("showDropdown");
+  }
 }
-   
-
